@@ -14,18 +14,20 @@ Prerequisites for this example:
 
 Javascript code (paste into app.js):
 
-    var express = require('express')
-    var selfSignedHttps = require('self-signed-https')
-    var forceSsl = require('force-ssl')
-    
-    var app = express()
-    app.listen(80) // http on port 80
-    selfSignedHttps(app).listen(443) // https on port 443
-    app.use(forceSsl)
-    
-    app.get('/', function(req, res) {
-      res.send('hello world')
-    })
+```javascript
+var express = require('express')
+var selfSignedHttps = require('self-signed-https')
+var forceSsl = require('force-ssl')
+
+var app = express()
+app.listen(80) // http on port 80
+selfSignedHttps(app).listen(443) // https on port 443
+app.use(forceSsl)
+
+app.get('/', function(req, res) {
+  res.send('hello world')
+})
+```
 
 You may need to run it as root (since it listens on port 80):
 
