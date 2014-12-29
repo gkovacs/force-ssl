@@ -1,6 +1,6 @@
 {
   "name": "force-ssl",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Express middleware for forcing ssl. Redirects http requests to https.",
   "main": "force-ssl.js",
   "scripts": {
