@@ -1,0 +1,25 @@
+{
+  "name": "force-ssl",
+  "version": "1.0.0",
+  "description": "Express middleware for forcing ssl. Redirects http requests to https.",
+  "main": "force-ssl.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gkovacs/force-ssl.git"
+  },
+  "keywords": [
+    "express",
+    "ssl",
+    "https",
+    "force"
+  ],
+  "author": "Geza Kovacs (http://github.com/gkovacs)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gkovacs/force-ssl/issues"
+  },
+  "homepage": "https://github.com/gkovacs/force-ssl"
+}
