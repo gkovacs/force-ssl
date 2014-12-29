@@ -12,7 +12,7 @@ Prerequisites for this example:
 
     npm install express self-signed-https force-ssl
 
-Javascript code:
+Javascript code (paste into app.js):
 
     var express = require('express')
     var selfSignedHttps = require('self-signed-https')
@@ -27,21 +27,11 @@ Javascript code:
       res.send('hello world')
     })
 
-You may need to run it with sudo (since it listens on port 80). Now if you visit http://localhost, it should redirect you to https://localhost
+You may need to run it as root (since it listens on port 80):
 
-Same example in Coffeescript / LiveScript:
+    sudo node app.js
 
-    express = require('express')
-    selfSignedHttps = require('self-signed-https')
-    forceSsl = require('force-ssl')
-    
-    app = express()
-    app.listen(80) # http on port 80
-    selfSignedHttps(app).listen(443) # https on port 443
-    app.use(forceSsl)
-    
-    app.get '/', (req, res) ->
-      res.send('hello world')
+Now if you visit http://localhost, it should redirect you to https://localhost
 
 ## License
 
